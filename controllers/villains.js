@@ -34,8 +34,5 @@ const saveNewVillain = async (request, response) => {
 
   return response.status(201).send(newVillain)
 }
-  // INSERT INTO villains(name, movie, slug) Values()
-}
-
 
 module.exports = { getAllVillains, getVillainBySlug, saveNewVillain }
