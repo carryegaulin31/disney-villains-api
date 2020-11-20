@@ -4,8 +4,9 @@ const villains = (connection, Sequelize) => {
     name: { type: Sequelize.STRING },
     movie: { type: Sequelize.STRING },
     slug: { type: Sequelize.STRING },
-  },
-    { paranoid: true })
+  }, {
+    paranoid: true
+  })
 }
 
 module.exports = villains
