@@ -16,9 +16,11 @@ const getVillainBySlug = async (request, response) => {
 
     const villains = await models.villains.findOne({ where: { slug } })
 
-    return response.send(villains)
+    return villains
+      ? response.send(slug)
+      : response.status(404).send('Sorry not found')
   } catch (error) {
-    return response.status(404).send('Sorry not found')
+    return response.status(500).send('Unable to retrieve')
   }
 }
 

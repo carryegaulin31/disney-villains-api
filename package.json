@@ -22,7 +22,7 @@
     "eslint": "/node_modules/bin/eslint --format codeframe .",
     "lint": "npm run eslint && npm run puglint",
     "lint: fix": "/node_modules/bin/eslint --fix --format codeframe .",
-    "tests": "./node_modules/.bin/mocha tests/**/*.test.js"
+    "test": "./node_modules/.bin/mocha tests/**/*.test.js"
   },
   "repository": {
     "type": "git",
