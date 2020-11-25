@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const chai = require('chai')
 const sinon = require('sinon')
 const sinonChai = require('sinon-chai')
@@ -91,6 +92,7 @@ describe('Controllers - villains', () => {
   })
 
   describe('saveNewVillain', () => {
+    // eslint-disable-next-line max-len
     it('accepts new villain details and saves them as a new villain, returning the saved villain with a 201 status', async () => {
       const request = { body: newVillain }
       const stubbedCreate = sinon.stub(models.villains, 'create').returns(newVillain)
